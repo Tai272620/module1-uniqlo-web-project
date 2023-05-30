@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+</head>
+
+
+<body>
+    <header class="header-login">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/uniqlo-logo-vector.png" alt=""></a>
+        </div>
+    </header>
+    <form class="register-form" id="form-1" method="POST">
+        <h2>CREATE AN ACCOUNT</h2>
+        <div class="form-group">
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="text" placeholder="Enter a valid email" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label><br>
+            <input id="password" name="password" type="text" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password_confirmation">Confirm Password</label><br>
+            <input id="password_confirmation" name="password_confirmation" type="text" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <button class="form-submit">Register</button>
+    </form>
+
+    <script>
+
+        function uuid() {
+            return new Date().getMilliseconds() + Math.floor(Math.random() * 999999999);
+        }
+        // Chức năng đăng ký
+        // function registerUser() {
+        //     let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
+        //     let valueEmail = document.getElementById("email").value;
+        //     let valuePassword = document.getElementById("password").value;
+        //     let valueConfirmPassword = document.getElementById("password_confirmation").value;
+        //     // kiểm tra trong listUsers đã tồn tại email user hay chưa
+        //     // nếu chưa có thì cho đăng ký
+        //     // nếu có rồi thì báo email đã tồn tại
+        //     for (let i = 0; i < listUsers.length; i++) {
+        //         if (valueEmail == listUsers[i].email) {
+        //             alert("Tài khoản đã tồn tại");
+        //             return;
+        //         }
+        //     }
+
+        //     let userInfo = {
+        //         email: valueEmail,
+        //         password: valuePassword,
+        //         idUser: uuid(),
+        //         cartUser: []
+        //     }
+
+        //     if (valuePassword != valueConfirmPassword) {
+        //         alert("Mật khẩu không khớp");
+        //         return;
+        //     } else {
+        //         listUsers.push(userInfo);
+        //         localStorage.setItem("listUsers", JSON.stringify(listUsers));
+        //         window.location.href = "login1.html";
+        //     }
+        // }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mong muốn của chúng ta
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                    Validator.isRequired('#password_confirmation'),
+                    Validator.isConfirmed('#password_confirmation', function () {
+                        return document.querySelector('#form-1 #password').value;
+                    }, 'Mật khẩu nhập lại không chính xác')
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data);
+                    let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
+                    let flag = true;
+                    for (let i = 0; i < listUsers.length; i++) {
+                        if (listUsers[i].email == data.email) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        data.idUser = uuid();
+                        data.cartUser = [];
+                        listUsers.push(data);
+                        localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                        window.location.href = "login.html";
+                    } else {
+                        alert("User email is already exist");
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="../assets/js/validator.js"></script>
+</body>
+
+</html>

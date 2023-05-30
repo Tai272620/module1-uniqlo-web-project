@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="nagivation-container">
+        <div class="header">
+            <div class="header-right">
+                <span class="help">Trợ giúp</span>
+                <span class="help">Hệ thống cửa hàng</span>
+                <div class="language">
+                    <span>English</span>
+                    <span class="active">Tiếng Việt</span>
+                </div>
+            </div>
+        </div>
+        <div class="nagivation">
+            <div class="nagivation-left">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/images/uniqlo-logo-vector.png" alt=""></a>
+                </div>
+                <ul>
+                    <li onclick="renderWomenListProducts()">WOMEN</li>
+                    <li onclick="renderMenListProducts()">MEN</li>
+                    <li onclick="renderKidsListProducts()">KIDS</li>
+                    <li onclick="renderBabyListProducts()">BABY</li>
+                </ul>
+            </div>
+            <div class="nagivation-right">
+                <ul>
+                    <li>
+                        <ion-icon name="search" onclick="searchProduct()"></ion-icon>
+                    </li>
+                    <li>
+                        <a href="./html/login.html"><ion-icon name="person-outline" class="login-button"></ion-icon></a>
+                        <ion-icon name="log-in-outline" onclick="checkLogout()" class="logout-button"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="cart-outline" onclick="showCartProducts()"></ion-icon>
+                        <span class="cart-quantity">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-input">
+            <input class="search-product" type="text" placeholder="Tìm kiếm theo từ khoá">
+            <div class="search-button"><ion-icon name="search-outline" style="color: #fff;"></ion-icon></div>
+            <div class="close-button" onclick="closeSearchProduct()"><ion-icon name="close-sharp"></ion-icon></div>
+            <ion-icon name="close-sharp" class="delete-searchInput" onclick="deleteSearchInput()"></ion-icon>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="banner-container">
+            <div class="banner-top">
+                <img class="mySlides" src="../assets/images/banners/banner1.png" alt="">
+                <img class="mySlides" src="../assets/images/banners/banner2.png" alt="">
+                <img class="mySlides" src="../assets/images/banners/banner3.png" alt="">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="cartProducts-container">
+        <div class="cartProducts-header">
+            <div class="title">SHOPPING CART</div>
+            <div class="cartProducts-close">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+        </div>
+        <div class="cartProductItems">
+
+        </div>
+        <div class="cartProducts-subTotal">
+
+        </div>
+        <div class="cartProducts-button">
+            <button class="cartProducts-continue-btn">CONTINUE SHOPPING</button>
+            <button class="cartProducts-checkout-btn">CHECKOUT</button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/global.js"></script>
+</body>
+
+</html>
