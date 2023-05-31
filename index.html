@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,6 +31,7 @@
                     <a href="index.html"><img src="./assets/images/uniqlo-logo-vector.png" alt=""></a>
                 </div>
                 <ul>
+                    <li onclick="renderListAllProducts()">All</li>
                     <li onclick="renderWomenListProducts()">WOMEN</li>
                     <li onclick="renderMenListProducts()">MEN</li>
                     <li onclick="renderKidsListProducts()">KIDS</li>
@@ -49,33 +51,44 @@
                         <ion-icon name="heart-outline"></ion-icon>
                     </li>
                     <li>
-                        <ion-icon name="cart-outline" onclick="showCartProducts()"></ion-icon>
+                        <ion-icon name="cart-outline" onclick="showCartProducts()" class="cart-product"></ion-icon>
                         <span class="cart-quantity">0</span>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="searchProduct-container">
+        </div>
         <div class="search-input">
-            <input class="search-product" type="text" placeholder="Tìm kiếm theo từ khoá">
+            <input class="search-product" type="text" placeholder="Tìm kiếm theo từ khoá"
+                oninput="searchInputProduct()">
             <div class="search-button"><ion-icon name="search-outline" style="color: #fff;"></ion-icon></div>
             <div class="close-button" onclick="closeSearchProduct()"><ion-icon name="close-sharp"></ion-icon></div>
             <ion-icon name="close-sharp" class="delete-searchInput" onclick="deleteSearchInput()"></ion-icon>
         </div>
     </nav>
 
-    <div class="content-container">
-        <div class="banner-container">
-            <div class="banner-top">
-                <img class="mySlides" src="../assets/images/banners/banner1.png" alt="">
-                <img class="mySlides" src="../assets/images/banners/banner2.png" alt="">
-                <img class="mySlides" src="../assets/images/banners/banner3.png" alt="">
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
+    <div class="banner-container">
+        <div class="banner-top">
+            <img class="mySlides" src="../assets/images/banners/banner1.png" alt="">
+            <img class="mySlides" src="../assets/images/banners/banner2.png" alt="">
+            <img class="mySlides" src="../assets/images/banners/banner3.png" alt="">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
+        <div class="banner-bottom">
+            <img class="banner-image" src="../assets/images/banners/background.png" alt="">
+            <img class="banner-image" src="../assets/images/banners/background2.png" alt="">
+        </div>
+    </div>
 
+    <div class="content-container">
 
     </div>
+    <ul class="listPage">
+
+    </ul>
+
     <div class="cartProducts-container">
         <div class="cartProducts-header">
             <div class="title">SHOPPING CART</div>
@@ -96,6 +109,8 @@
             <button class="cartProducts-checkout-btn">CHECKOUT</button>
         </div>
     </div>
+
+    <div id="toast"></div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
