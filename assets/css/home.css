@@ -215,6 +215,17 @@ body {
     font-size: 16px;
 }
 
+.product-item {
+    cursor: pointer;
+}
+
+.product-item.sold-out {
+    opacity: 0.5;
+    /* Giảm độ mờ của sản phẩm */
+    /* pointer-events: none; */
+    /* Vô hiệu hóa sự kiện click */
+}
+
 /* Product Item CSS */
 
 .product-grid {}
@@ -358,6 +369,7 @@ body {
     padding: 5px;
 }
 
+
 .changeQuantity-button {
     display: flex;
     align-items: center;
@@ -370,7 +382,6 @@ body {
 
 .cartItem {
     flex: 10;
-    /* border-bottom: 1px solid #f5f5f5; */
     padding: 10px;
 }
 

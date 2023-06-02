@@ -4,10 +4,52 @@ let listProducts = [
         name: "AIRism Cotton T (short sleeve)",
         price: 14.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women1black.avif",
-            "./assets/images/productItems/women1navy.avif",
-            "./assets/images/productItems/women1white.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women1black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1black.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1navy.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1navy.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1navy.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1white.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1white.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women1white.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -15,10 +57,52 @@ let listProducts = [
         name: "Smooth Stretch Cotton Crew Neck Long-Sleeve T-Shirt",
         price: 24.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women2blue.avif",
-            "./assets/images/productItems/women2pink.avif",
-            "./assets/images/productItems/women2wine.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women2blue.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2blue.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2blue.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2pink.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2pink.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2pink.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2wine.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2wine.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women2wine.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -26,10 +110,52 @@ let listProducts = [
         name: "AIRism Seamless Boat Neck Long T (Short Sleeve)",
         price: 29.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women3blue.avif",
-            "./assets/images/productItems/women3green.avif",
-            "./assets/images/productItems/women3yellow.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women3blue.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3blue.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3blue.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3green.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3green.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3green.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3yellow.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3yellow.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women3yellow.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -37,9 +163,37 @@ let listProducts = [
         name: "UV cut crew neck cardigan (long sleeve)",
         price: 39.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women4blue.avif",
-            "./assets/images/productItems/women4pink.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women4blue.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women4blue.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women4blue.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women4pink.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women4pink.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women4pink.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -48,9 +202,37 @@ let listProducts = [
         name: "Slub Jersey Striped Cropped T-Shirt",
         price: 9.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women5bluecaro.avif",
-            "./assets/images/productItems/women5blackcaro.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women5bluecaro.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women5bluecaro.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women5bluecaro.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women5blackcaro.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women5blackcaro.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women5blackcaro.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -59,10 +241,52 @@ let listProducts = [
         name: "Ribbed Racer Back Cropped Tank Top",
         price: 9.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women6blue.avif",
-            "./assets/images/productItems/women6green.avif",
-            "./assets/images/productItems/women6pink.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women6blue.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6blue.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6blue.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6green.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6green.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6green.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6pink.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6pink.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women6pink.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -71,10 +295,52 @@ let listProducts = [
         name: "AirSense Jacket (Ultra Light Jacket)",
         price: 79.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women7black.avif",
-            "./assets/images/productItems/women7brown.avif",
-            "./assets/images/productItems/women7navy.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women7black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7black.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7brown.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7brown.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7brown.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7navy.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7navy.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women7navy.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -83,9 +349,37 @@ let listProducts = [
         name: "Pleated Striped Mini Skirt (JW Anderson)",
         price: 19.90,
         type: "WOMEN",
-        color: [
-            "./assets/images/productItems/women8blue.avif",
-            "./assets/images/productItems/women8navy.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/women8blue.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women8blue.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women8blue.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women8navy.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women8navy.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/women8navy.avif",
+                size: L,
+                stock: 1
+            },
         ],
     },
     {
@@ -93,10 +387,52 @@ let listProducts = [
         name: "U AIRism Cotton Crew Neck Oversized Half-Sleeve T-Shirt",
         price: 14.90,
         type: "MEN",
-        color: [
-            "./assets/images/productItems/men1black.avif",
-            "./assets/images/productItems/men1green.avif",
-            "./assets/images/productItems/men1brown.avif"
+        options: [
+            {
+                scr: "./assets/images/productItems/men1black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1black.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1green.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1green.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1green.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1brown.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1brown.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men1brown.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -104,10 +440,52 @@ let listProducts = [
         name: "RF Short-Sleeve Graphic T-Shirt",
         price: 29.90,
         type: "MEN",
-        color: [
-            "./assets/images/productItems/men2black.avif",
-            "./assets/images/productItems/men2white.avif",
-            "./assets/images/productItems/men2purple.avif"
+        options: [
+            {
+                scr: "./assets/images/productItems/men2black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2black.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2white.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2white.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2white.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2purple.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2purple.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men2purple.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -115,10 +493,52 @@ let listProducts = [
         name: "Waffle Long-Sleeve Henley T-Shirt",
         price: 29.90,
         type: "MEN",
-        color: [
-            "./assets/images/productItems/men3yellow.avif",
-            "./assets/images/productItems/men3gray.avif",
-            "./assets/images/productItems/men3black.avif",
+        options: [
+            {
+                scr: "./assets/images/productItems/men3yellow.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3yellow.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3yellow.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3gray.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3gray.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3gray.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: L,
+                stock: 1
+            }
         ],
     },
     {
@@ -126,6 +546,53 @@ let listProducts = [
         name: "Smart Ankle Pants (2-Way Stretch Cotton, Tall)",
         price: 39.90,
         type: "MEN",
+        options: [
+            {
+                scr: "./assets/images/productItems/men4olive.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men4olive.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men4olive.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men4gray.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men4gray.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men4gray.avif",
+                size: L,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: S,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: M,
+                stock: 1
+            },
+            {
+                scr: "./assets/images/productItems/men3black.avif",
+                size: L,
+                stock: 1
+            }
+        ],
         color: [
             "./assets/images/productItems/men4olive.avif",
             "./assets/images/productItems/men4gray.avif",
@@ -345,14 +812,15 @@ let listProducts = [
     },
 ]
 
-function uuid() {
-    return new Date().getMilliseconds() + Math.floor(Math.random() * 999999999);
-}
+// function uuid() {
+//     return new Date().getMilliseconds() + Math.floor(Math.random() * 999999999);
+// }
 
-for (let i = 0; i < listProducts.length; i++) {
-    listProducts[i].id = uuid();
-    listProducts[i].quantity = 1;
-}
+// for (let i = 0; i < listProducts.length; i++) {
+//     listProducts[i].id = uuid();
+//     listProducts[i].quantity = 1;
+//     listProducts[i].stock = 1;
+// }
 
 // localStorage.setItem("listProducts", JSON.stringify(listProducts));
 
@@ -492,6 +960,11 @@ if (checkLogin()) {
 
 // Hàm hiển thị danh sách sản phẩm
 function renderListProducts(params) {
+    // let product = params.find((product) => {
+    //     return product.stock === 0;
+    // })
+    // console.log(product);
+    // console.log(params)
     let result = "";
     for (let i = 0; i < params.length; i++) {
         result += `
@@ -515,8 +988,45 @@ function renderListProducts(params) {
     document.querySelector(".banner-container").style.display = "none";
 }
 
+// function renderListProducts(params) {
+//     let product = params.find((product) => {
+//         return product.stock === 0;
+//     });
+//     console.log(product);
+//     console.log(params);
+//     let result = "";
+//     for (let i = 0; i < params.length; i++) {
+//         let priceHTML = "";
+//         let productClass = "product-item";
+//         if (params[i].stock === 0) {
+//             priceHTML = "<p>Sold Out</p>";
+//             productClass += " sold-out"; // Thêm class "sold-out" nếu sản phẩm hết hàng
+//         } else {
+//             priceHTML = `<p>${USDollar.format(params[i].price)}</p>`;
+//         }
+//         result += `
+//             <div class="${productClass}" onclick="renderProductItem('${params[i].id}')">
+//                 <div class="product-image">
+//                     <img src="${params[i].img}" alt="">
+//                 </div>
+//                 <div class="product-description">   
+//                     <div class="product-type">
+//                         <span>${params[i].type}</span>
+//                         <span>S-M-L</span>
+//                     </div>
+//                     <h4 class="product-name">${params[i].name}</h4>
+//                     ${priceHTML}
+//                 </div>
+//             </div>
+//             `;
+//     }
+//     document.querySelector(".content-container").innerHTML = result;
+//     document.querySelector(".content-container").style.display = "grid";
+//     document.querySelector(".banner-container").style.display = "none";
+// }
+
+
 function renderListAllProducts() {
-    console.log("render")
     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
     renderListProducts(listProducts);
     document.querySelector(".listPage").style.display = "block";
@@ -636,7 +1146,7 @@ function changeProductColor(src) {
 function addToCart(idProduct) {
     let checkLogin = localStorage.getItem("checkLogin");
     if (checkLogin == null) {
-        showErrorToast()
+        showErrorNotLoginToast()
         // alert("chưa đăng nhập không thể mua hàng");
         return;
     }
@@ -654,7 +1164,7 @@ function addToCart(idProduct) {
     }
 
     if (selectedSize === null) {
-        alert("Vui lòng chọn size");
+        showErrorSizeToast();
         return;
     }
 
@@ -739,7 +1249,7 @@ function showCartProducts() {
                         <img src="${cartUser[i].src}" alt="">
                     </div>
                     <div class="cartProductItem-info">
-                        <h3>${cartUser[i].name}</h3>
+                        <h4>${cartUser[i].name}</h4>
                         <p>Product code: ${cartUser[i].id}</p>
                         <p>Size: ${cartUser[i].size}</p>
                         <p>${USDollar.format(cartUser[i].price)}</p>
@@ -936,71 +1446,7 @@ function pagination() {
     window.changePage = changePage;
 }
 
-// Toast Message
 
-function showSuccessToast() {
-    toast({
-        title: "Thành công!",
-        message: "Bạn đã đăng ký thành công tài khoản tại F8.",
-        type: "success",
-        duration: 5000
-    });
-}
-
-function showErrorToast() {
-    toast({
-        title: "Warning!",
-        message: "Please choose product size",
-        type: "error",
-        duration: 5000
-    });
-}
-
-function toast({ title = "", message = "", type = "info", duration = 3000 }) {
-    const main = document.getElementById("toast");
-    if (main) {
-        const toast = document.createElement("div");
-
-        // Auto remove toast
-        const autoRemoveId = setTimeout(function () {
-            main.removeChild(toast);
-        }, duration + 1000);
-
-        // Remove toast when clicked
-        toast.onclick = function (e) {
-            if (e.target.closest(".toast__close")) {
-                main.removeChild(toast);
-                clearTimeout(autoRemoveId);
-            }
-        };
-
-        const icons = {
-            success: "fas fa-check-circle",
-            info: "fas fa-info-circle",
-            warning: "fas fa-exclamation-circle",
-            error: "fas fa-exclamation-circle"
-        };
-        const icon = icons[type];
-        const delay = (duration / 1000).toFixed(2);
-
-        toast.classList.add("toast", `toast--${type}`);
-        toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
-
-        toast.innerHTML = `
-                      <div class="toast__icon">
-                          <i class="${icon}"></i>
-                      </div>
-                      <div class="toast__body">
-                          <h3 class="toast__title">${title}</h3>
-                          <p class="toast__msg">${message}</p>
-                      </div>
-                      <div class="toast__close">
-                          <i class="fas fa-times"></i>
-                      </div>
-                  `;
-        main.appendChild(toast);
-    }
-}
 
 
 

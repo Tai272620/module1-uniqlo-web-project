@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/toastMessage.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
             <span>Show password</span><br>
             <a href="#">TERMS OF USE</a><br>
             <a href="#">PRIVACY POLICY</a><br>
-            <button id="loginButton" onclick="loginUser()" class="form-submit">Log in</button><br>
+            <button id="loginButton" class="form-submit">Log in</button><br>
             <a href="#">FORGOT YOUR PASSWORD?</a>
         </form>
         <div class="register-form">
@@ -46,56 +47,11 @@
             <button class="registerButton" onclick="registerUser()">Register</button><br>
         </div>
     </div>
-    <script>
-        // function loginUser() {
-        //     let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
-        //     let valueEmail = document.getElementById("email").value;
-        //     let valuePassword = document.getElementById("password").value;
 
-        //     for (let i = 0; i < listUsers.length; i++) {
-        //         if (valueEmail == listUsers[i].email && valuePassword == listUsers[i].password) {
-        //             console.log("Đăng nhập thành công");
-        //             localStorage.setItem("checkLogin", listUsers[i].idUser);
-        //             window.location.href = "home.html";
-        //             return;
-        //         }
-        //     }
-        //     alert("Tài khoản hoặc mật khẩu không đúng");
-        // }
-
-        function registerUser() {
-            window.location.href = "register.html";
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // Mong muốn của chúng ta
-            Validator({
-                form: '#form-2',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                    Validator.isEmail('#email'),
-                    Validator.minLength('#password', 6),
-                ],
-                onSubmit: function (data) {
-                    // Call API
-                    console.log(data);
-                    let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
-                    let checkUser = listUsers.find((user) => {
-                        return user.email === data.email && user.password === data.password
-                    })
-                    if (checkUser) {
-                        window.location.href = "../index.html";
-                        localStorage.setItem("checkLogin", checkUser.idUser);
-                        return;
-                    } else {
-                        alert("User email or password is wrong");
-                    }
-                }
-            });
-        });
-    </script>
+    <div id="toast"></div>
+    <script src="../assets/js/login.js"></script>
     <script src="../assets/js/validator.js"></script>
+    <script src="../assets/js/toastMessage.js"></script>
 </body>
 
 </html>
