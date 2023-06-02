@@ -12,7 +12,9 @@ function renderListProductAdmin() {
                 <div class="product-item-info">
                     <h5>${listProducts[i].name}</h5>
                     <p>$300</p>
-                    <p>in stock: ${listProducts[i].stock}</p>
+                    <p>S size in stock: ${listProducts[i].stock}</p>
+                    <p>M size in stock: ${listProducts[i].stock}</p>
+                    <p>L size in stock: ${listProducts[i].stock}</p>
                     <div class="product-item-button">
                         <button onclick="decreaseItem(this, ${i})">
                             <span class="material-symbols-outlined">

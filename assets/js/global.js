@@ -1,816 +1,1693 @@
-let listProducts = [
-    {
-        img: "./assets/images/productItems/women1black.avif",
-        name: "AIRism Cotton T (short sleeve)",
-        price: 14.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women1black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1black.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1navy.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1navy.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1navy.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1white.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1white.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women1white.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/women2blue.avif",
-        name: "Smooth Stretch Cotton Crew Neck Long-Sleeve T-Shirt",
-        price: 24.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women2blue.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2blue.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2blue.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2pink.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2pink.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2pink.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2wine.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2wine.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women2wine.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/women3blue.avif",
-        name: "AIRism Seamless Boat Neck Long T (Short Sleeve)",
-        price: 29.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women3blue.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3blue.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3blue.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3green.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3green.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3green.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3yellow.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3yellow.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women3yellow.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/women4blue.avif",
-        name: "UV cut crew neck cardigan (long sleeve)",
-        price: 39.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women4blue.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women4blue.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women4blue.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women4pink.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women4pink.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women4pink.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
+// let listProducts = [
+//     {
+//         img: "./assets/images/productItems/women1black.avif",
+//         name: "AIRism Cotton T (short sleeve)",
+//         price: 14.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women1black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     }
+//                 ],
+//             },
+//             {
+//                 src: "./assets/images/productItems/women1navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     }
+//                 ],
+//             },
+//             {
+//                 src: "./assets/images/productItems/women1white.avif",
+//                 sizes: [
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     }
+//                 ],
+//             },
+//         ],
+//     },
+//     {
+//         img: "./assets/images/productItems/women2blue.avif",
+//         name: "Smooth Stretch Cotton Crew Neck Long-Sleeve T-Shirt",
+//         price: 24.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women2blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women2pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women2wine.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/women3blue.avif",
+//         name: "AIRism Seamless Boat Neck Long T (Short Sleeve)",
+//         price: 29.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women3blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women3green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women3yellow.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/women4blue.avif",
+//         name: "UV cut crew neck cardigan (long sleeve)",
+//         price: 39.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women4blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women4pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
 
-        img: "./assets/images/productItems/women5bluecaro.avif",
-        name: "Slub Jersey Striped Cropped T-Shirt",
-        price: 9.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women5bluecaro.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women5bluecaro.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women5bluecaro.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women5blackcaro.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women5blackcaro.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women5blackcaro.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
+//         img: "./assets/images/productItems/women5bluecaro.avif",
+//         name: "Slub Jersey Striped Cropped T-Shirt",
+//         price: 9.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women5bluecaro.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women5blackcaro.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
 
-        img: "./assets/images/productItems/women6blue.avif",
-        name: "Ribbed Racer Back Cropped Tank Top",
-        price: 9.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women6blue.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6blue.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6blue.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6green.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6green.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6green.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6pink.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6pink.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women6pink.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
+//         img: "./assets/images/productItems/women6blue.avif",
+//         name: "Ribbed Racer Back Cropped Tank Top",
+//         price: 9.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women6blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women6green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women6pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
 
-        img: "./assets/images/productItems/women7black.avif",
-        name: "AirSense Jacket (Ultra Light Jacket)",
-        price: 79.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women7black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7black.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7brown.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7brown.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7brown.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7navy.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7navy.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women7navy.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
+//         img: "./assets/images/productItems/women7black.avif",
+//         name: "AirSense Jacket (Ultra Light Jacket)",
+//         price: 79.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women7black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women7brown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women7navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
 
-        img: "./assets/images/productItems/women8blue.avif",
-        name: "Pleated Striped Mini Skirt (JW Anderson)",
-        price: 19.90,
-        type: "WOMEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/women8blue.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women8blue.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women8blue.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women8navy.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women8navy.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/women8navy.avif",
-                size: L,
-                stock: 1
-            },
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men1black.avif",
-        name: "U AIRism Cotton Crew Neck Oversized Half-Sleeve T-Shirt",
-        price: 14.90,
-        type: "MEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/men1black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1black.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1green.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1green.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1green.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1brown.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1brown.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men1brown.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men2black.avif",
-        name: "RF Short-Sleeve Graphic T-Shirt",
-        price: 29.90,
-        type: "MEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/men2black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2black.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2white.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2white.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2white.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2purple.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2purple.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men2purple.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men3yellow.avif",
-        name: "Waffle Long-Sleeve Henley T-Shirt",
-        price: 29.90,
-        type: "MEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/men3yellow.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3yellow.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3yellow.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3gray.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3gray.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3gray.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men4olive.avif",
-        name: "Smart Ankle Pants (2-Way Stretch Cotton, Tall)",
-        price: 39.90,
-        type: "MEN",
-        options: [
-            {
-                scr: "./assets/images/productItems/men4olive.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men4olive.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men4olive.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men4gray.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men4gray.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men4gray.avif",
-                size: L,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: S,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: M,
-                stock: 1
-            },
-            {
-                scr: "./assets/images/productItems/men3black.avif",
-                size: L,
-                stock: 1
-            }
-        ],
-        color: [
-            "./assets/images/productItems/men4olive.avif",
-            "./assets/images/productItems/men4gray.avif",
-            "./assets/images/productItems/men4beige.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men5olive.avif",
-        name: "Cargo Jogger Pants",
-        price: 49.90,
-        type: "MEN",
-        color: [
-            "./assets/images/productItems/men5olive.avif",
-            "./assets/images/productItems/men5gray.avif",
-            "./assets/images/productItems/men5grown.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men6white.avif",
-        name: "Ultra Stretch DRY-EX Shorts",
-        price: 29.90,
-        type: "MEN",
-        color: [
-            "./assets/images/productItems/men6white.avif",
-            "./assets/images/productItems/men6gray.avif",
-            "./assets/images/productItems/men6blue.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men7white.avif",
-        name: "Fluffy Yarn Fleece Full-Zip Jacket",
-        price: 39.90,
-        type: "MEN",
-        color: [
-            "./assets/images/productItems/men7white.avif",
-            "./assets/images/productItems/men7black.avif",
-            "./assets/images/productItems/men7navy.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/men8darkbrown.avif",
-        name: "Single Collar Short Blouson",
-        price: 29.90,
-        type: "MEN",
-        color: [
-            "./assets/images/productItems/men8darkbrown.avif",
-            "./assets/images/productItems/men8navy.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid1blue.avif",
-        name: "Pocket UV Protector Parka (Sun Protection)",
-        price: 19.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid1blue.avif",
-            "./assets/images/productItems/kid1pink.avif",
-            "./assets/images/productItems/kid1white.webp",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid2blue.avif",
-        name: "Fluffy Yarn Fleece Full-Zip Jacket",
-        price: 29.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid2blue.avif",
-            "./assets/images/productItems/kid2green.avif",
-            "./assets/images/productItems/kid2pink.avif"
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid3brown.avif",
-        name: "Baseball jacketBaseball jacket",
-        price: 39.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid3brown.avif",
-            "./assets/images/productItems/kid3green.avif",
-            "./assets/images/productItems/kid3navy.avif"
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid4green.avif",
-        name: "U AIRism Cotton Crew Neck Short-Sleeve T-Shirt",
-        price: 14.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid4green.avif",
-            "./assets/images/productItems/kid4pink.avif",
-            "./assets/images/productItems/kid4blue.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid5white.avif",
-        name: "Easy Color Shorts",
-        price: 19.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid5white.avif",
-            "./assets/images/productItems/kid5black.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid6blue.avif",
-        name: "Baggy Jeans",
-        price: 29.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid6blue.avif",
-            "./assets/images/productItems/kid6navy.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid7black.avif",
-        name: "Ultra Stretch Sweatpants (Varsity Logo)",
-        price: 24.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid7black.avif",
-            "./assets/images/productItems/kid7navy.avif",
-            "./assets/images/productItems/kid7gray.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/kid8navy.avif",
-        name: "Ultra Stretch Long-Sleeve Sweatshirt",
-        price: 24.90,
-        type: "KIDS",
-        color: [
-            "./assets/images/productItems/kid8navy.avif",
-            "./assets/images/productItems/kid8gray.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby1green.avif",
-        name: "AIRism Long Sleeve UV Protection Jacket (Sun Protection)",
-        price: 29.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby1green.avif",
-            "./assets/images/productItems/baby1pink.avif",
-            "./assets/images/productItems/baby1white.avif"
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby2blue.avif",
-        name: "Joy Of Print Bodysuit Long Sleeve",
-        price: 19.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby2blue.avif",
-            "./assets/images/productItems/baby2red.avif",
-            "./assets/images/productItems/baby2white.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby3red.avif",
-        name: "Joy Of Print Long Sleeve One Pieces",
-        price: 19.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby3red.avif",
-            "./assets/images/productItems/baby3yellow.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby4blue.avif",
-        name: "Dress",
-        price: 19.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby4blue.avif",
-            "./assets/images/productItems/baby4brown.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby5red.avif",
-        name: "Short-Sleeve Bodysuit",
-        price: 7.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby5red.avif",
-            "./assets/images/productItems/baby5black.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby6white.avif",
-        name: "Cotton Mesh Sleeveless Bodysuit (Open Front)",
-        price: 7.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby6white.avif",
-            "./assets/images/productItems/baby6gray.avif",
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby7.webp",
-        name: "Light Warm Padded Washable Full-Zip Parka",
-        price: 49.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby7.webp",
-            "./assets/images/productItems/baby7yellow.webp",
-            "./assets/images/productItems/baby7navy.avif"
-        ],
-    },
-    {
-        img: "./assets/images/productItems/baby8black.webp",
-        name: "Dry Easy Balloon Shorts",
-        price: 14.90,
-        type: "BABY",
-        color: [
-            "./assets/images/productItems/baby8black.webp",
-            "./assets/images/productItems/baby8red.jpeg",
-        ],
-    },
-]
+//         img: "./assets/images/productItems/women8blue.avif",
+//         name: "Pleated Striped Mini Skirt (JW Anderson)",
+//         price: 19.90,
+//         type: "WOMEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/women8blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/women8navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men1black.avif",
+//         name: "U AIRism Cotton Crew Neck Oversized Half-Sleeve T-Shirt",
+//         price: 14.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men1black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men1green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men1brown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men2black.avif",
+//         name: "RF Short-Sleeve Graphic T-Shirt",
+//         price: 29.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men2black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men2white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men2purple.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men3yellow.avif",
+//         name: "Waffle Long-Sleeve Henley T-Shirt",
+//         price: 29.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men3yellow.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men3gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men3black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men4olive.avif",
+//         name: "Smart Ankle Pants (2-Way Stretch Cotton, Tall)",
+//         price: 39.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men4olive.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men4gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men4beige.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men5olive.avif",
+//         name: "Cargo Jogger Pants",
+//         price: 49.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men5olive.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men5gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men5grown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men6white.avif",
+//         name: "Ultra Stretch DRY-EX Shorts",
+//         price: 29.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men6white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men6gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men6blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men7white.avif",
+//         name: "Fluffy Yarn Fleece Full-Zip Jacket",
+//         price: 39.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men7white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men7black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men7navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/men8darkbrown.avif",
+//         name: "Single Collar Short Blouson",
+//         price: 29.90,
+//         type: "MEN",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/men8darkbrown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/men8navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid1blue.avif",
+//         name: "Pocket UV Protector Parka (Sun Protection)",
+//         price: 19.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid1blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid1pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid1white.webp",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid2blue.avif",
+//         name: "Fluffy Yarn Fleece Full-Zip Jacket",
+//         price: 29.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid2blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid2green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid2pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid3brown.avif",
+//         name: "Baseball jacketBaseball jacket",
+//         price: 39.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid3brown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid3green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid3navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid4green.avif",
+//         name: "U AIRism Cotton Crew Neck Short-Sleeve T-Shirt",
+//         price: 14.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid4green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid4pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid4blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid5white.avif",
+//         name: "Easy Color Shorts",
+//         price: 19.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid5white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid5black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid6blue.avif",
+//         name: "Baggy Jeans",
+//         price: 29.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid6blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid6navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid7black.avif",
+//         name: "Ultra Stretch Sweatpants (Varsity Logo)",
+//         price: 24.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid7black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid7navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid7gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/kid8navy.avif",
+//         name: "Ultra Stretch Long-Sleeve Sweatshirt",
+//         price: 24.90,
+//         type: "KIDS",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/kid8navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/kid8gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby1green.avif",
+//         name: "AIRism Long Sleeve UV Protection Jacket (Sun Protection)",
+//         price: 29.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby1green.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby1pink.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby1white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby2blue.avif",
+//         name: "Joy Of Print Bodysuit Long Sleeve",
+//         price: 19.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby2blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby2red.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby2white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ],
+//     },
+//     {
+//         img: "./assets/images/productItems/baby3red.avif",
+//         name: "Joy Of Print Long Sleeve One Pieces",
+//         price: 19.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby3red.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby3yellow.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby4blue.avif",
+//         name: "Dress",
+//         price: 19.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby4blue.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby4brown.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby5red.avif",
+//         name: "Short-Sleeve Bodysuit",
+//         price: 7.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby5red.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby5black.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby6white.avif",
+//         name: "Cotton Mesh Sleeveless Bodysuit (Open Front)",
+//         price: 7.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby6white.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby6gray.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby7.webp",
+//         name: "Light Warm Padded Washable Full-Zip Parka",
+//         price: 49.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby7.webp",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby7yellow.webp",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby7navy.avif",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         img: "./assets/images/productItems/baby8black.webp",
+//         name: "Dry Easy Balloon Shorts",
+//         price: 14.90,
+//         type: "BABY",
+//         options: [
+//             {
+//                 src: "./assets/images/productItems/baby8black.webp",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             },
+//             {
+//                 src: "./assets/images/productItems/baby8red.jpeg",
+//                 sizes: [
+//                     {
+//                         key: "S",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "M",
+//                         stock: 1
+//                     },
+//                     {
+//                         key: "L",
+//                         stock: 1
+//                     },
+//                 ]
+//             }
+//         ]
+//     }
+// ]
 
 // function uuid() {
 //     return new Date().getMilliseconds() + Math.floor(Math.random() * 999999999);
@@ -819,7 +1696,14 @@ let listProducts = [
 // for (let i = 0; i < listProducts.length; i++) {
 //     listProducts[i].id = uuid();
 //     listProducts[i].quantity = 1;
-//     listProducts[i].stock = 1;
+// }
+
+
+// for (let i = 0; i < listProducts.length; i++) {
+//     console.log(listProducts[i])
+//     for (let j = 0; j < listProducts[i].options.length; j++) {
+//         listProducts[i].options[j].idOption = uuid();
+//     }
 // }
 
 // localStorage.setItem("listProducts", JSON.stringify(listProducts));
@@ -1127,27 +2011,96 @@ function renderProductItem(idProduct) {
     document.querySelector(".content-container").innerHTML = result;
     document.querySelector(".banner-container").style.display = "none";
     let productItemColor = document.querySelector(".productItem-image-color");
-    let color = "";
-    for (let i = 0; i < productItem.color.length; i++) {
 
-        color += `
-            <img src="${productItem.color[i]}" alt="" onclick="changeProductColor('${productItem.color[i]}')">
+    let productColors = "";
+    for (let i = 0; i < productItem.options.length; i++) {
+
+        productColors += `
+            <img src="${productItem.options[i].src}" alt="" onclick="changeProductColor('${productItem.options[i].src}', '${productItem.options[i].idOption}')">
         `
     }
-    productItemColor.innerHTML = color
+    productItemColor.innerHTML = productColors;
 }
 
-function changeProductColor(src) {
+function changeProductColor(src, idOption) {
+    // console.log(idOption);
     document.querySelector(".main-image").src = `${src}`;
 }
 
 // Hàm thêm sản phẩm vào giỏ hàng
 
+// function addToCart(idProduct) {
+//     let checkLogin = localStorage.getItem("checkLogin");
+//     let src = "." + document.querySelector(".main-image").src.slice(21);
+
+//     if (checkLogin == null) {
+//         showErrorNotLoginToast();
+//         return;
+//     }
+
+//     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
+//     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+//     let selectedSize = null;
+
+//     const sizeOptions = document.querySelectorAll(".size-option");
+//     for (let i = 0; i < sizeOptions.length; i++) {
+//         if (sizeOptions[i].checked) {
+//             selectedSize = sizeOptions[i].value;
+//             break;
+//         }
+//     }
+
+//     if (selectedSize === null) {
+//         showErrorSizeToast();
+//         return;
+//     }
+
+//     let product = listProducts.find((product) => {
+//         return product.id == idProduct;
+//     });
+
+//     let option = product.options.find((option) => {
+//         return option.src == src;
+//     });
+
+//     let idOption = option.idOption;
+
+//     console.log(idOption);
+//     for (let i = 0; i < listUsers.length; i++) {
+//         if (listUsers[i].idUser == checkLogin) {
+//             let cart = listUsers[i].cartUser;
+//             console.log(cart);
+
+//             // Check if the product with the same idOption and selectedSize already exists in the cart
+//             let existingProduct = cart.find((item) => {
+//                 return item.idOption == idOption && item.size == selectedSize;
+//             });
+//             console.log(existingProduct);
+
+//             if (existingProduct) {
+//                 // Increment the quantity if the product already exists
+//                 existingProduct.quantity++;
+//                 localStorage.setItem("listUsers", JSON.stringify(listUsers));
+//             } else {
+//                 // Add the product to the cart with quantity 1
+//                 cart.push({
+//                     idOption: idOption,
+//                     size: selectedSize,
+//                     quantity: 1,
+//                 });
+//                 console.log(cart);
+//                 localStorage.setItem("listUsers", JSON.stringify(listUsers));
+//             }
+//         }
+//     }
+// }
+
 function addToCart(idProduct) {
     let checkLogin = localStorage.getItem("checkLogin");
+    let src = "." + document.querySelector(".main-image").src.slice(21);
+
     if (checkLogin == null) {
-        showErrorNotLoginToast()
-        // alert("chưa đăng nhập không thể mua hàng");
+        showErrorNotLoginToast();
         return;
     }
 
@@ -1168,41 +2121,52 @@ function addToCart(idProduct) {
         return;
     }
 
+    let product = listProducts.find((product) => {
+        return product.id == idProduct;
+    });
+
+    let option = product.options.find((option) => {
+        return option.src == src;
+    });
+
+    let idOption = option.idOption;
+    let imageLink = option.src;
+    let productName = product.name;
+    let productPrice = product.price;
+
     for (let i = 0; i < listUsers.length; i++) {
         if (listUsers[i].idUser == checkLogin) {
             let cart = listUsers[i].cartUser;
 
-            for (let j = 0; j < cart.length; j++) {
-                if (cart[j].src === document.querySelector(".main-image").src && cart[j].size === selectedSize) {
-                    // Similar product with same src and size found in the cart
-                    cart[j].quantity += 1;
-                    localStorage.setItem("listUsers", JSON.stringify(listUsers));
-                    showCartProductTotal();
-                    return; // Exit the function since the item has been updated
-                }
-            }
+            // Check if the product with the same idOption and selectedSize already exists in the cart
+            let existingProduct = cart.find((item) => {
+                return item.idOption == idOption && item.size == selectedSize;
+            });
 
-            // No similar product found in the cart, proceed to add a new item
-            for (let j = 0; j < listProducts.length; j++) {
-                if (listProducts[j].id == idProduct) {
-                    let item = {
-                        id: idProduct,
-                        src: document.querySelector(".main-image").src,
-                        name: listProducts[j].name,
-                        price: listProducts[j].price,
-                        type: listProducts[j].type,
-                        quantity: 1, // Set initial quantity to 1 for new items
-                        size: selectedSize
-                    }
-                    cart.push(item);
-                    localStorage.setItem("listUsers", JSON.stringify(listUsers));
-                    showCartProductTotal();
-                    return; // Exit the function after adding the new item
-                }
+            if (existingProduct) {
+                // Increment the quantity if the product already exists
+                existingProduct.quantity++;
+                localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                showCartProductTotal()
+            } else {
+                // Add the product to the cart with quantity 1, image link, and product name
+                cart.push({
+                    idOption: idOption,
+                    size: selectedSize,
+                    quantity: 1,
+                    imageLink: imageLink,
+                    productName: productName,
+                    productPrice: productPrice
+                });
+                localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                showCartProductTotal()
             }
         }
     }
 }
+
+
+
 
 // Hàm hiển thị tổng số lượng sản phẩm trong giỏ hàng
 function showCartProductTotal() {
@@ -1246,24 +2210,24 @@ function showCartProducts() {
             <div class="cartProductItem" id = "cartProductItem_${i}">
                 <div class="cartItem">
                     <div class="cartProductItem-image">
-                        <img src="${cartUser[i].src}" alt="">
+                        <img src="${cartUser[i].imageLink}" alt="">
                     </div>
                     <div class="cartProductItem-info">
-                        <h4>${cartUser[i].name}</h4>
-                        <p>Product code: ${cartUser[i].id}</p>
+                        <h4>${cartUser[i].productName}</h4>
+                        <p>Product code: ${cartUser[i].idOption}</p>
                         <p>Size: ${cartUser[i].size}</p>
-                        <p>${USDollar.format(cartUser[i].price)}</p>
+                        <p>${USDollar.format(cartUser[i].productPrice)}</p>
                             <div class="changeQuantity-button">
                                 <button>
-                                    <span class="material-symbols-outlined" onclick="decreaseItem(this, ${i})">
+                                    <span class="material-symbols-outlined" onclick="decreaseItem(${i})">
                                         remove
                                     </span>
                                 </button>
                                 
-                                <span class="productItem-quantity" id="quantity_${i}">${cartUser[i].quantity}</span>
+                                <span class="productItem-quantity" id="quantity">${cartUser[i].quantity}</span>
 
                                 <button>
-                                    <span class="material-symbols-outlined" onclick="increaseItem(this, ${i})">
+                                    <span class="material-symbols-outlined" onclick="increaseItem(${i})">
                                         add
                                     </span>
                                 </button>
@@ -1293,54 +2257,60 @@ document.querySelector(".cartProducts-close").addEventListener("click", () => {
 
 
 // Hàm tăng số lượng sản phẩm
-function increaseItem(element, index) {
 
+function increaseItem(index) {
+    console.log(index);
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
     let checkLogin = localStorage.getItem("checkLogin");
 
-    // Tăng số lượng sản phẩm trong listUsers
-    let user = listUsers.find((item) => item.idUser == checkLogin);
-    let cartUser = user.cartUser;
-    cartUser.find((item) => item.src == cartUser[index].src && item.size == cartUser[index].size).quantity++;
-
-    localStorage.setItem("listUsers", JSON.stringify(listUsers));
-    showCartProductTotal();
-    caculateTotalProductsPrice();
-    // Cập nhật số lượng trực tiếp trên giao diện
-    let quantityElement = document.getElementById(`quantity_${index}`);
-    quantityElement.textContent = cartUser[index].quantity;
+    // Find the user in listUsers
+    for (let i = 0; i < listUsers.length; i++) {
+        if (listUsers[i].idUser == checkLogin) {
+            let cartUser = listUsers[i].cartUser;
+            for (let j = 0; j < cartUser.length; j++) {
+                if (j == index) {
+                    cartUser[j].quantity += 1;
+                    localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                    showCartProducts();
+                    showCartProductTotal();
+                    caculateTotalProductsPrice();
+                    return;
+                }
+            }
+        }
+    }
 }
 
 // Hàm giảm số lượng sản phẩm
-function decreaseItem(element, index) {
-    // console.log(index);
+
+function decreaseItem(index) {
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
     let checkLogin = localStorage.getItem("checkLogin");
-    let user = listUsers.find((item) => item.idUser == checkLogin);
-    let cartUser = user.cartUser;
 
-    if (cartUser[index].quantity > 1) {
-
-        // Giảm số lượng sản phẩm trong listUsers
-
-        cartUser.find((item) => item.src == cartUser[index].src && item.size == cartUser[index].size).quantity--;
-
-        localStorage.setItem("listUsers", JSON.stringify(listUsers));
-
-        // Cập nhật số lượng trực tiếp trên giao diện
-        let quantityElement = document.getElementById(`quantity_${index}`);
-        quantityElement.textContent = cartUser[index].quantity;
-
-        showCartProductTotal();
-        caculateTotalProductsPrice();
-    } else {
-        cartUser.splice(index, 1);
-        localStorage.setItem("listUsers", JSON.stringify(listUsers));
-        showCartProducts();
-        showCartProductTotal();
-        caculateTotalProductsPrice();
+    for (let i = 0; i < listUsers.length; i++) {
+        if (listUsers[i].idUser == checkLogin) {
+            let cartUser = listUsers[i].cartUser;
+            for (let j = 0; j < cartUser.length; j++) {
+                if (cartUser[index].quantity > 1) {
+                    cartUser[index].quantity -= 1;
+                    localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                    showCartProducts();
+                    showCartProductTotal();
+                    caculateTotalProductsPrice();
+                    return;
+                } else {
+                    cartUser.splice(index, 1);
+                    localStorage.setItem("listUsers", JSON.stringify(listUsers));
+                    showCartProducts();
+                    showCartProductTotal();
+                    caculateTotalProductsPrice();
+                    return;
+                }
+            }
+        }
     }
 }
+
 
 // Hàm xoá sản phẩm trong giỏ hàng
 
@@ -1364,7 +2334,7 @@ function caculateTotalProductsPrice() {
     let user = listUsers.find((item) => item.idUser == checkLogin);
     let cartUser = user.cartUser;
     let totalPrice = cartUser.reduce((total, currentValue) => {
-        return total += currentValue.price * currentValue.quantity;
+        return total += currentValue.productPrice * currentValue.quantity;
     }, 0)
     document.querySelector(".cartProducts-subTotal").innerHTML = `SUBOTAL: ${USDollar.format(totalPrice)}`;
 }
@@ -1445,6 +2415,8 @@ function pagination() {
     // Attach the changePage function to the global object
     window.changePage = changePage;
 }
+
+
 
 
 
