@@ -1709,6 +1709,7 @@
 // localStorage.setItem("listProducts", JSON.stringify(listProducts));
 
 // Hàm convert tiền tệ
+
 const USDollar = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -1717,6 +1718,24 @@ const VND = new Intl.NumberFormat('vi-VN', {
     style: 'currency',
     currency: 'VND',
 });
+
+window.onload = function () {
+    const bar = document.getElementById("bar");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("navbar");
+
+    if (bar) {
+        bar.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+    }
+
+    if (close) {
+        close.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
+    }
+};
 
 // Create a Fixed Header on Scroll
 window.onscroll = function () { myFunction() };
@@ -1844,11 +1863,6 @@ if (checkLogin()) {
 
 // Hàm hiển thị danh sách sản phẩm
 function renderListProducts(params) {
-    // let product = params.find((product) => {
-    //     return product.stock === 0;
-    // })
-    // console.log(product);
-    // console.log(params)
     let result = "";
     for (let i = 0; i < params.length; i++) {
         result += `
@@ -1868,7 +1882,7 @@ function renderListProducts(params) {
             `
     }
     document.querySelector(".content-container").innerHTML = result;
-    document.querySelector(".content-container").style.display = "grid";
+    document.querySelector(".content-container").style.display = "flex";
     document.querySelector(".banner-container").style.display = "none";
 }
 
@@ -1979,9 +1993,6 @@ function renderProductItem(idProduct) {
             <div class="productItem-image">
                 <div class="productItem-main-image">
                 <img src="${productItem.img}" alt="" class="main-image">
-                <button class="angle-right" onclick="right()"><i
-                    class="fa-sharp fa-solid fa-angle-right"></i></button>
-                <button class="angle-left" onclick="left()"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
             </div>
                 <div class="productItem-image-color">
             
@@ -2028,72 +2039,6 @@ function changeProductColor(src, idOption) {
 }
 
 // Hàm thêm sản phẩm vào giỏ hàng
-
-// function addToCart(idProduct) {
-//     let checkLogin = localStorage.getItem("checkLogin");
-//     let src = "." + document.querySelector(".main-image").src.slice(21);
-
-//     if (checkLogin == null) {
-//         showErrorNotLoginToast();
-//         return;
-//     }
-
-//     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
-//     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
-//     let selectedSize = null;
-
-//     const sizeOptions = document.querySelectorAll(".size-option");
-//     for (let i = 0; i < sizeOptions.length; i++) {
-//         if (sizeOptions[i].checked) {
-//             selectedSize = sizeOptions[i].value;
-//             break;
-//         }
-//     }
-
-//     if (selectedSize === null) {
-//         showErrorSizeToast();
-//         return;
-//     }
-
-//     let product = listProducts.find((product) => {
-//         return product.id == idProduct;
-//     });
-
-//     let option = product.options.find((option) => {
-//         return option.src == src;
-//     });
-
-//     let idOption = option.idOption;
-
-//     console.log(idOption);
-//     for (let i = 0; i < listUsers.length; i++) {
-//         if (listUsers[i].idUser == checkLogin) {
-//             let cart = listUsers[i].cartUser;
-//             console.log(cart);
-
-//             // Check if the product with the same idOption and selectedSize already exists in the cart
-//             let existingProduct = cart.find((item) => {
-//                 return item.idOption == idOption && item.size == selectedSize;
-//             });
-//             console.log(existingProduct);
-
-//             if (existingProduct) {
-//                 // Increment the quantity if the product already exists
-//                 existingProduct.quantity++;
-//                 localStorage.setItem("listUsers", JSON.stringify(listUsers));
-//             } else {
-//                 // Add the product to the cart with quantity 1
-//                 cart.push({
-//                     idOption: idOption,
-//                     size: selectedSize,
-//                     quantity: 1,
-//                 });
-//                 console.log(cart);
-//                 localStorage.setItem("listUsers", JSON.stringify(listUsers));
-//             }
-//         }
-//     }
-// }
 
 function addToCart(idProduct) {
     let checkLogin = localStorage.getItem("checkLogin");
@@ -2166,8 +2111,6 @@ function addToCart(idProduct) {
 }
 
 
-
-
 // Hàm hiển thị tổng số lượng sản phẩm trong giỏ hàng
 function showCartProductTotal() {
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
@@ -2231,7 +2174,6 @@ function showCartProducts() {
                                         add
                                     </span>
                                 </button>
-                                
                             </div>
                     </div>
                 </div>
@@ -2240,7 +2182,6 @@ function showCartProducts() {
                             close
                         </span>
                 </div>
-                
             </div>
         `;
     }
@@ -2415,6 +2356,156 @@ function pagination() {
     // Attach the changePage function to the global object
     window.changePage = changePage;
 }
+
+// Hàm chuyển đến trang thanh toán đơn hàng
+
+document.querySelector(".cartProducts-checkout-btn").addEventListener("click", () => {
+    document.querySelector(".cartProducts-container").style.display = "none";
+    document.querySelector(".banner-container").style.display = "none";
+    document.querySelector(".nagivation-container").style.opacity = 1;
+    renderOrderedProductsList();
+})
+
+// Hàm hiển thị sản phẩm đã thêm vào giỏ hàng trong đơn hàng
+
+function renderOrderedProductsList() {
+    let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+    let checkLogin = localStorage.getItem("checkLogin");
+    let user = listUsers.find((user) => {
+        return user.idUser == checkLogin;
+    })
+
+    let cartUser = user.cartUser;
+    let totalOrders = cartUser.reduce((total, currentValue) => {
+        return total += currentValue.quantity;
+    }, 0)
+
+    let totalOrdersPrice = cartUser.reduce((total, currentValue) => {
+        return total += currentValue.productPrice * currentValue.quantity;
+    }, 0)
+
+    let result = "";
+    for (let i = 0; i < cartUser.length; i++) {
+        result += `
+            <div class="ordered-product">
+                <div class="ordered-product-img">
+                    <img src="${cartUser[i].imageLink}" alt="">
+                </div>
+                <p class="product-quantity">x${cartUser[i].quantity}</p>
+            </div>
+            `;
+    }
+    document.querySelector(".content-container").innerHTML = `
+            <div class="checkout-container">
+                    <div class="userInfo">
+                        <h3>REGISTER A NEW ADDRESS</h3>
+                        <div class="userInfo-form">
+                            <div class="form-group">
+                                <label for="firstname">FIRST NAME</label><br>
+                                <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">LAST NAME</label><br>
+                                <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="provice">PROVINCE</label><br>
+                                <input type="text" id="province" name="province" placeholder="Please enter your provice" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="district">DISTRICT</label><br>
+                                <input type="text" id="district" name="district" placeholder="Please enter your district" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">ADDRESS DETAILS</label><br>
+                                <input id="address" name="address" type="text" placeholder="Apartment, suites, zones, buildings, floors etc" class="form-control"><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">PHONE</label><br>
+                                <input id="phone" name="phone" type="text" placeholder="Enter 10-11 numbers starting with 0" class="form-control"><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobilePhone">MOBILE PHONE</label><br>
+                                <input id="mobilePhone" name="mobilePhone" type="text" placeholder="Enter 10-11 numbers starting with 0" class="form-control"><br>
+                            </div>
+                            <p>We may contact you by phone or email if we have questions about your order and shipping options.</p>
+                            <input type="checkbox" class="showPassword">
+                            <span>Use as billing address</span><br>
+                            <button class="continue-checkout" onclick = "checkout()">CONTINUE CHECKOUT</button>
+                        </div>
+                    </div>
+                    <div class="total-orders">
+                        <div class="total-orders-detail">
+                            <p class="total-orders-quantity">TOTAL ORDERS | ${totalOrders} PRODUCTS</p>
+                            <p class="total-orders-price">TOTAL ${USDollar.format(totalOrdersPrice)}</p>
+                            <p class="total-orders-tax">Value added tax included ${USDollar.format(0.05 * totalOrdersPrice)}</p>
+                            <p class="total-orders-price-tax">TOTAL ORDERS ${USDollar.format(1.05 * totalOrdersPrice)}</p>
+                        </div>
+                        <div class="ordered-products">
+                            ${result}
+                        </div>
+                    </div>
+            </div>
+        `;
+    let firstName = document.querySelector("#firstname");
+    let lastName = document.querySelector("#lastname");
+    let province = document.querySelector("#province");
+    let district = document.querySelector("#district");
+    let address = document.querySelector("#address");
+    let phone = document.querySelector("#phone");
+    let mobilePhone = document.querySelector("#mobilePhone");
+    firstName.value = user.userInfo.firstName;
+    lastName.value = user.userInfo.lastName;
+    province.value = user.userInfo.province;
+    district.value = user.userInfo.district;
+    address.value = user.userInfo.address;
+    phone.value = user.userInfo.phone;
+    mobilePhone.value = user.userInfo.mobilePhone;
+}
+
+
+function validateUserInfo() {
+    let firstName = document.querySelector("#firstname");
+    let lastName = document.querySelector("#lastname");
+    let province = document.querySelector("#province");
+    let district = document.querySelector("#district");
+    let address = document.querySelector("#address");
+    let phone = document.querySelector("#phone");
+    let mobilePhone = document.querySelector("#mobilePhone");
+    let inputElement = document.getElementsByClassName("form-control");
+    if (firstName.value == "" || lastName.value == "" || province.value == "" || district.value == "" || address.value == "") {
+        for (let i = 0; i < inputElement.length; i++) {
+            inputElement[i].classList.add("invalid");
+        }
+    } else {
+        for (let i = 0; i < inputElement.length; i++) {
+            inputElement[i].classList.remove("invalid");
+        }
+    }
+    let userInfo = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        province: province.value,
+        district: district.value,
+        address: address.value,
+        phone: phone.value,
+        mobilePhone: mobilePhone.value
+    }
+    let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+    let checkLogin = localStorage.getItem("checkLogin");
+    let user = listUsers.find((user) => {
+        return user.idUser == checkLogin;
+    })
+    user.userInfo = userInfo;
+    localStorage.setItem("listUsers", JSON.stringify(listUsers));
+}
+
+function checkout() {
+    console.log("checkout")
+    validateUserInfo();
+}
+
+
 
 
 

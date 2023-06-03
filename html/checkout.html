@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+</head>
+
+<body>
+    <h1>PAY</h1>
+    <div class="checkout-container">
+        <div class="delivery-container">
+            <div class="delivery-options">
+                <h2>1.DEIVERY OPTIONS</h2>
+                <p>Eligible for free shipping.</p>
+            </div>
+            <div class="delivery-address">
+                <input type="radio" id="S" value="S" name="size" class="size-option">
+                <label for="S">Delivery To Address</label><br>
+                <p>Transport fee: FREE OF CHARGE</p>
+                <p>Free delivery applies to home delivery orders from VND 1,500,000 and all orders received at the store
+                    (Click & Collect). After clicking Pay, the selected products will be kept in the cart for 30
+                    minutes.</p>
+                <input type="radio" id="M" value="M" name="size" class="size-option">
+                <label for="M">Click & Collect</label><br>
+                <p>Transport fee: FREE OF CHARGE</p>
+                <p>Order online and pick up in store, please wait for the email when the package has arrived at the
+                    selected store.</p>
+            </div>
+            <div class="userInfo">
+                <h3>REGISTER A NEW ADDRESS</h3>
+                <div class="userInfo-form">
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" placeholder="Please enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">SURNAME</label>
+                        <input type="text" id="lastname" placeholder="Please enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">CONSCIOUS</label>
+                        <select name="" id="">
+                            <option value="">Tp. Hồ Chí Minh</option>
+                            <option value="">Hà Nội</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">DISTRICT</label>
+                        <select name="" id="">
+                            <option value="">Quận 1</option>
+                            <option value="">Quận Đống Đa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">ADDRESS DETAILS</label>
+                        <input id="address" type="text"
+                            placeholder="Apartment, suites, zones, buildings, floors etc"><br>
+                        <span>In order for the invoice to be valid, it is required to correctly fill in the information
+                            in
+                            Vietnamese with accents.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">PHONE</label>
+                        <input id="phone" type="text" placeholder="Enter 10-11 numbers starting with 0"><br>
+                        <span>Please enter 10-11 numbers starting with 0</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobilePhone">MOBILE PHONE</label><br>
+                        <input id="mobilePhone" type="text" placeholder="Enter 10-11 numbers starting with 0">
+                        <span>Please enter 10-11 numbers starting with 0</span>
+                    </div>
+                    <p>We may contact you by phone or email if we have questions about your order and shipping options.
+                    </p>
+                    <input type="checkbox" class="showPassword">
+                    <span>Use as billing address</span><br>
+                    <button>CONTINUE CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        <div class="total-orders">
+            <div class="total-orders-detail">
+                <p>TOTAL ORDERS | 6 PRODUCTS</p>
+                <p>TOTAL $300</p>
+                <p>Value added tax included $10</p>
+                <p>TOTAL ORDERS $310</p>
+            </div>
+            <div class="ordered-products">
+                <div class="ordered-product">
+                    <div class="ordered-product-img">
+                        <img src="../assets/images/productItems/baby1green.avif" alt="">
+                    </div>
+                    <p class="product-quantity">x1</p>
+                </div>
+                <div class="ordered-product">
+                    <div class="ordered-product-img">
+                        <img src="../assets/images/productItems/baby1green.avif" alt="">
+                    </div>
+                    <p class="product-quantity">x1</p>
+                </div>
+                <div class="ordered-product">
+                    <div class="ordered-product-img">
+                        <img src="../assets/images/productItems/baby1green.avif" alt="">
+                    </div>
+                    <p class="product-quantity">x1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
