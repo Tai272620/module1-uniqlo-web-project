@@ -49,7 +49,6 @@ body {
     color: #fff;
     width: 20px;
     height: 20px;
-    /* padding: 3px 6px; */
     align-items: center;
     justify-content: center;
     background-color: #ff0000;
@@ -197,7 +196,8 @@ body {
 
 .delete-searchInput {
     position: absolute;
-    right: 300px;
+    /* right: 300px; */
+    right: 21%;
     bottom: 27px;
     cursor: pointer;
 }
@@ -318,6 +318,10 @@ body {
     cursor: pointer;
     font-size: 16px;
     width: 300px;
+}
+
+.product-idOption {
+    display: none;
 }
 
 .productItem-main-image {}
@@ -474,9 +478,12 @@ body {
 /* Search Input Product */
 
 .searchProduct-container {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    width: 1037px;
+    /* display: grid; */
+    /* grid-template-columns: 250px 250px 250px 250px; */
+    /* width: 1037px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 71%;
     margin: 0 auto;
     border: 1px solid #ececec;
     border-top: none;
@@ -712,8 +719,12 @@ body {
     background-color: #f4f4f4;
 }
 
+.active-footer {
+    /* height: 100vh; */
+    display: none;
+}
+
 .footer-left {
-    /* border: 1px solid; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -721,7 +732,6 @@ body {
 }
 
 .footer-right {
-    /* border: 1px solid; */
     display: flex;
     align-items: center;
     justify-content: center;
