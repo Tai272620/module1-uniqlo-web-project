@@ -10,15 +10,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     }
                 ],
             },
@@ -27,15 +27,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     }
                 ],
             },
@@ -44,15 +44,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     }
                 ],
             },
@@ -69,15 +69,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -86,15 +86,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -103,15 +103,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -128,15 +128,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -145,15 +145,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -162,15 +162,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -187,15 +187,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -204,15 +204,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -230,15 +230,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -247,15 +247,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -273,15 +273,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -290,15 +290,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -307,15 +307,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -333,15 +333,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -350,15 +350,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -367,15 +367,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -393,15 +393,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -410,15 +410,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -435,15 +435,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -452,15 +452,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -469,15 +469,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -494,15 +494,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -511,15 +511,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -528,15 +528,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -553,15 +553,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -570,15 +570,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -587,15 +587,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -612,15 +612,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -629,15 +629,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -646,15 +646,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -671,15 +671,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -688,15 +688,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -705,15 +705,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -730,15 +730,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -747,15 +747,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -764,15 +764,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -789,15 +789,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -806,15 +806,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -823,15 +823,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -848,15 +848,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -865,15 +865,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -890,15 +890,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -907,15 +907,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -924,15 +924,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -949,15 +949,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -966,15 +966,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -983,15 +983,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1008,15 +1008,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1025,15 +1025,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1042,15 +1042,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1067,15 +1067,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1084,15 +1084,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1101,15 +1101,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1126,15 +1126,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1143,15 +1143,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1168,15 +1168,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1185,15 +1185,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1210,15 +1210,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1227,15 +1227,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1244,15 +1244,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1269,15 +1269,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1286,15 +1286,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1311,15 +1311,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1328,15 +1328,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1345,15 +1345,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1370,15 +1370,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1387,15 +1387,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1404,15 +1404,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1429,15 +1429,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1446,15 +1446,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1471,15 +1471,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1488,15 +1488,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1513,15 +1513,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1530,15 +1530,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1555,15 +1555,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1572,15 +1572,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1597,15 +1597,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1614,15 +1614,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1631,15 +1631,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1656,15 +1656,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             },
@@ -1673,15 +1673,15 @@ let listProductsStock = [
                 sizes: [
                     {
                         key: "S",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "M",
-                        stock: 1
+                        stock: 10
                     },
                     {
                         key: "L",
-                        stock: 1
+                        stock: 10
                     },
                 ]
             }
@@ -1859,6 +1859,14 @@ if (checkLogin()) {
     document.querySelector(".login-button").style.display = "none";
     document.querySelector(".logout-button").style.display = "block";
 }
+
+if (checkIsAdmin()) {
+    document.querySelector(".admin").style.display = "block";
+}
+
+document.querySelector(".admin").addEventListener("click", () => {
+    window.location.href = "http://127.0.0.1:5501/html/admin.html";
+})
 
 // Hàm hiển thị danh sách sản phẩm
 function renderListProducts(params) {
@@ -2307,6 +2315,21 @@ function checkLogin() {
     }
 }
 
+// Hàm kiểm tra người dùng có phải admin hay không
+
+function checkIsAdmin() {
+    let checkLogin = localStorage.getItem("checkLogin");
+    let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+    let user = listUsers.find((user) => {
+        return user.idUser == checkLogin;
+    })
+    if (user.isAdmin) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 // Hàm kiểm tra đã đăng xuất hay chưa
 function checkLogout() {
     let confirmLogout = confirm("Bạn có muốn thoát không");
@@ -2600,15 +2623,23 @@ function validateCartProduct() {
         }
     }
 
-
-
-    // ...Cập nhật thông tin người dùng và lưu vào localStorage...
 }
 
 function checkout() {
     console.log("checkout");
     validateCartProduct();
     validateUserInfo();
+    FinalCheckout();
+    document.querySelector(".cart-quantity").innerHTML = 0;
+}
+
+function FinalCheckout() {
+    let result = "";
+    document.querySelector(".content-container").innerHTML = `
+        <div class="final-checkout">
+            <h1>Thanks for your purchase!</h1>
+        </div>
+    `
 }
 
 

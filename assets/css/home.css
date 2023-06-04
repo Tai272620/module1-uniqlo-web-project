@@ -44,6 +44,10 @@ body {
     position: relative;
 }
 
+.admin {
+    display: none;
+}
+
 .cart-quantity {
     display: flex;
     color: #fff;
