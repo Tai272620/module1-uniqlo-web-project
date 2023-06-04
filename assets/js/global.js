@@ -2088,8 +2088,6 @@ function addToCart(idProduct) {
         return product.id == idProduct;
     });
 
-    console.log(product.options);
-
     let option = product.options.find((x) => {
         return x.idOption == idOption
     })
@@ -2220,7 +2218,6 @@ document.querySelector(".cartProducts-close").addEventListener("click", () => {
 // Hàm tăng số lượng sản phẩm
 
 function increaseItem(index) {
-    console.log(index);
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
     let checkLogin = localStorage.getItem("checkLogin");
 
@@ -2486,63 +2483,43 @@ function renderOrderedProductsList() {
 }
 
 
-// function validateUserInfo() {
-//     let firstName = document.querySelector("#firstname");
-//     let lastName = document.querySelector("#lastname");
-//     let province = document.querySelector("#province");
-//     let district = document.querySelector("#district");
-//     let address = document.querySelector("#address");
-//     let phone = document.querySelector("#phone");
-//     let mobilePhone = document.querySelector("#mobilePhone");
-//     let inputElement = document.getElementsByClassName("form-control");
-//     if (firstName.value == "" || lastName.value == "" || province.value == "" || district.value == "" || address.value == "") {
-//         for (let i = 0; i < inputElement.length; i++) {
-//             inputElement[i].classList.add("invalid");
-//         }
-//     } else {
-//         for (let i = 0; i < inputElement.length; i++) {
-//             inputElement[i].classList.remove("invalid");
-//         }
-//     }
-//     let userInfo = {
-//         firstName: firstName.value,
-//         lastName: lastName.value,
-//         province: province.value,
-//         district: district.value,
-//         address: address.value,
-//         phone: phone.value,
-//         mobilePhone: mobilePhone.value
-//     }
-//     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
-//     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
-//     let checkLogin = localStorage.getItem("checkLogin");
-//     let user = listUsers.find((user) => {
-//         return user.idUser == checkLogin;
-//     })
-//     let cartUser = user.cartUser;
+function validateUserInfo() {
+    let firstName = document.querySelector("#firstname");
+    let lastName = document.querySelector("#lastname");
+    let province = document.querySelector("#province");
+    let district = document.querySelector("#district");
+    let address = document.querySelector("#address");
+    let phone = document.querySelector("#phone");
+    let mobilePhone = document.querySelector("#mobilePhone");
+    let inputElement = document.getElementsByClassName("form-control");
+    if (firstName.value == "" || lastName.value == "" || province.value == "" || district.value == "" || address.value == "") {
+        for (let i = 0; i < inputElement.length; i++) {
+            inputElement[i].classList.add("invalid");
+        }
+    } else {
+        for (let i = 0; i < inputElement.length; i++) {
+            inputElement[i].classList.remove("invalid");
+        }
+    }
+    let userInfo = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        province: province.value,
+        district: district.value,
+        address: address.value,
+        phone: phone.value,
+        mobilePhone: mobilePhone.value
+    }
+    let listProducts = JSON.parse(localStorage.getItem("listProducts"));
+    let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+    let checkLogin = localStorage.getItem("checkLogin");
+    let user = listUsers.find((user) => {
+        return user.idUser == checkLogin;
+    })
 
-//     // for (let i = 0; i < cartUser.length; i++) {
-//     //     if (cartUser[i].productId == listProducts[i].id) {
-//     //         for (let j = 0; j < listProducts[i].options.length; j++) {
-//     //             if (cartUser[i].idOption == listProducts[i].options[j].id) {
-//     //                 if (Number(cartUser[i].quantity) <= Number(listProducts[i].options[j].stock)) {
-//     //                     listProducts[i].options[j].stock = Number(listProducts[i].options[j].stock) - Number(cartUser[i].quantity);
-//     //                     localStorage.setItem("listProducts", JSON.stringify(listProducts));
-//     //                     myFunction("Thank you for your purchase!")
-
-//     //                 } else {
-//     //                     myFunction(Item ${ listProducts[i].name } in stock are not enoungh.${ listProducts[i].options[j].stock } items left in stock)
-//     //                     return;
-//     //                 }
-//     //             }
-
-//     //         }
-//     //     }
-//     // }
-//     user.userInfo = userInfo;
-//     user.purchaseHistory = [...user.cartUser];
-//     localStorage.setItem("listUsers", JSON.stringify(listUsers));
-// }
+    user.userInfo = userInfo;
+    localStorage.setItem("listUsers", JSON.stringify(listUsers));
+}
 
 function getInforProductInProductLocal(productId) {
     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
@@ -2551,14 +2528,14 @@ function getInforProductInProductLocal(productId) {
             return listProducts[i];
         }
     }
-    return false
+    return false;
 }
 
-function validCart(carts, product) {
+function validCart(cart, product) {
     for (let j in product.options) {
         for (let k in product.options[j].sizes) {
-            if (product.options[j].sizes[k].key == carts.size) {
-                if (carts.quantity > product.options[j].sizes[k].stock) {
+            if (product.options[j].sizes[k].key == cart.size) {
+                if (cart.quantity > product.options[j].sizes[k].stock) {
                     return {
                         status: false,
                         name: product.name,
@@ -2573,27 +2550,27 @@ function validCart(carts, product) {
     }
 }
 
-function validCartAndUpdateStore(carts, product) {
+function validCartAndUpdateStore(cart, product) {
     for (let j in product.options) {
         for (let k in product.options[j].sizes) {
-            if (product.options[j].sizes[k].key == carts.size) {
-                product.options[j].sizes[k] -= carts.quantity;
+            if (product.options[j].sizes[k].key == cart.size) {
+                product.options[j].sizes[k].stock -= cart.quantity;
 
                 let productList = JSON.parse(localStorage.getItem("listProducts"));
                 for (let i in productList) {
-                    if (productList[i].id == product.idProduct) {
+                    if (productList[i].id == product.id) {
                         productList[i] = product;
                         localStorage.setItem("listProducts", JSON.stringify(productList)); // save to local
-                        return
+                        console.log("da tru")
+                        return;
                     }
                 }
-
             }
         }
     }
 }
 
-function validateUserInfo() {
+function validateCartProduct() {
     // ...Các bước kiểm tra thông tin người dùng và lấy các giá trị cần thiết...
     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
     let listUsers = JSON.parse(localStorage.getItem("listUsers"));
@@ -2608,15 +2585,20 @@ function validateUserInfo() {
         if (!validValue.status) {
             alert("Mon hang " + validValue.name + " chi con: " + validValue.stock + " san pham");
             return
-        } else {
-            validCartAndUpdateStore(carts, product);
-
-
         }
     }
 
     // tru trong store
 
+    for (let i in cartUser) {
+        let validValue = validCart(cartUser[i], getInforProductInProductLocal(cartUser[i].idProduct));
+        if (validValue.status) {
+            validCartAndUpdateStore(cartUser[i], getInforProductInProductLocal(cartUser[i].idProduct));
+            user.purchaseHistory.push([...cartUser]);
+            cartUser.length = 0;
+            localStorage.setItem("listUsers", JSON.stringify(listUsers));
+        }
+    }
 
 
 
@@ -2625,29 +2607,10 @@ function validateUserInfo() {
 
 function checkout() {
     console.log("checkout");
-
+    validateCartProduct();
     validateUserInfo();
 }
 
-
-// for (let i = 0; i < cartUser.length; i++) {
-//     if (cartUser[i].productId == listProducts[i].id) {
-//         for (let j = 0; j < listProducts[i].options.length; j++) {
-//             if (cartUser[i].idOption == listProducts[i].options[j].id) {
-//                 if (Number(cartUser[i].quantity) <= Number(listProducts[i].options[j].stock)) {
-//                     listProducts[i].options[j].stock = Number(listProducts[i].options[j].stock) - Number(cartUser[i].quantity);
-//                     localStorage.setItem("listProducts", JSON.stringify(listProducts));
-//                     myFunction("Thank you for your purchase!")
-
-//                 } else {
-//                     myFunction(Item ${ listProducts[i].name } in stock are not enoungh.${ listProducts[i].options[j].stock } items left in stock)
-//                     return;
-//                 }
-//             }
-
-//         }
-//     }
-// }
 
 
 

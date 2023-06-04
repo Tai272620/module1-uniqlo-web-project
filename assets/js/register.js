@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (flag) {
                 data.idUser = uuid();
                 data.cartUser = [];
+                data.purchaseHistory = [];
                 listUsers.push(data);
                 localStorage.setItem("listUsers", JSON.stringify(listUsers));
                 showSuccessRegisterToast()
