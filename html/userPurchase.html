@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Purchase</title>
+    <link rel="stylesheet" href="../assets/css/userPurchseHistory.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <h1>User Purchase History</h1>
+    <div class="listUsers-container">
+
+    </div>
+    <div class="userPurchase">
+
+    </div>
+    <script>
+        // Hàm convert tiền tệ
+
+        const USDollar = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+        const VND = new Intl.NumberFormat('vi-VN', {
+            style: 'currency',
+            currency: 'VND',
+        });
+        let checkLogin = localStorage.getItem("checkLogin");
+        let listUsers = JSON.parse(localStorage.getItem("listUsers"));
+        console.log(listUsers);
+        let result = "";
+        function renderListUsers() {
+
+            for (let i = 0; i < listUsers.length; i++) {
+                if (listUsers[i].isAdmin) {
+                    continue;
+                }
+                result += `
+                    <div class="userInfo">
+                        <span>${listUsers[i].email}</span>
+                        <span class="material-symbols-outlined" onclick="renderUserPurchaseHistory(${listUsers[i].idUser})">
+                            shopping_cart
+                        </span>
+                    </div>
+                `;
+            }
+            document.querySelector(".listUsers-container").innerHTML = result;
+        }
+
+        renderListUsers();
+
+        let result1 = "";
+        function renderUserPurchaseHistory(idUser) {
+            console.log(idUser);
+            let user = listUsers.find((user) => {
+                return user.idUser == idUser;
+            })
+            console.log(user);
+            let userPurchaseHistory = user.purchaseHistory;
+            console.log(userPurchaseHistory);
+
+            for (let j = 0; j < userPurchaseHistory.length; j++) {
+                for (let k = 0; k < userPurchaseHistory[j].length; k++) {
+                    // console.log(userPurchaseHistory[j][k].imageLink);
+                    result1 += `
+                    <div class="productInfo">
+                        <div class="productInfo-img">
+                            <img src=".${userPurchaseHistory[j][k].imageLink}" alt="">
+                        </div>
+                        <div class="productInfo-detail">
+                            <p>${userPurchaseHistory[j][k].productName}</p>
+                            <p>Size ${userPurchaseHistory[j][k].size}</p>
+                            <p>${USDollar.format(userPurchaseHistory[j][k].productPrice)}</p>
+                            <p>quantity: ${userPurchaseHistory[j][k].quantity}</p>
+                            <p>total price: ${USDollar.format(userPurchaseHistory[j][k].productPrice * userPurchaseHistory[j][k].quantity)}</p>
+                        </div>
+                    </div>
+                `;
+                }
+
+            }
+            document.querySelector(".userPurchase").innerHTML = result1;
+        }
+    </script>
+</body>
+
+</html>

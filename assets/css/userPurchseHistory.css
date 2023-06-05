@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+.productInfo-img img {
+    width: 150px;
+}
+
+.userPurchase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.productInfo {
+    width: 300px;
+    border: 1px solid black;
+}

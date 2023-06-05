@@ -124,3 +124,7 @@ function deleteCartProductItem(productId, idOption, size) {
 document.querySelector(".homePage").addEventListener("click", () => {
     window.location.href = "http://127.0.0.1:5501/index.html";
 })
+
+document.querySelector(".userInfo").addEventListener("click", () => {
+    window.location.href = "http://127.0.0.1:5501/html/userPurchase.html";
+})
