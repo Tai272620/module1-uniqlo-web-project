@@ -1894,44 +1894,6 @@ function renderListProducts(params) {
     document.querySelector(".footer-container").classList.remove("active-footer");
 }
 
-// function renderListProducts(params) {
-//     let product = params.find((product) => {
-//         return product.stock === 0;
-//     });
-//     console.log(product);
-//     console.log(params);
-//     let result = "";
-//     for (let i = 0; i < params.length; i++) {
-//         let priceHTML = "";
-//         let productClass = "product-item";
-//         if (params[i].stock === 0) {
-//             priceHTML = "<p>Sold Out</p>";
-//             productClass += " sold-out"; // Thêm class "sold-out" nếu sản phẩm hết hàng
-//         } else {
-//             priceHTML = `<p>${USDollar.format(params[i].price)}</p>`;
-//         }
-//         result += `
-//             <div class="${productClass}" onclick="renderProductItem('${params[i].id}')">
-//                 <div class="product-image">
-//                     <img src="${params[i].img}" alt="">
-//                 </div>
-//                 <div class="product-description">   
-//                     <div class="product-type">
-//                         <span>${params[i].type}</span>
-//                         <span>S-M-L</span>
-//                     </div>
-//                     <h4 class="product-name">${params[i].name}</h4>
-//                     ${priceHTML}
-//                 </div>
-//             </div>
-//             `;
-//     }
-//     document.querySelector(".content-container").innerHTML = result;
-//     document.querySelector(".content-container").style.display = "grid";
-//     document.querySelector(".banner-container").style.display = "none";
-// }
-
-
 function renderListAllProducts() {
     let listProducts = JSON.parse(localStorage.getItem("listProducts"));
     renderListProducts(listProducts);
@@ -2575,17 +2537,20 @@ function validCart(cart, product) {
 
 function validCartAndUpdateStore(cart, product) {
     for (let j in product.options) {
-        for (let k in product.options[j].sizes) {
-            if (product.options[j].sizes[k].key == cart.size) {
-                product.options[j].sizes[k].stock -= cart.quantity;
+        // console.log(product.options)
+        if (cart.idOption == product.options[j].idOption) {
+            for (let k in product.options[j].sizes) {
+                if (product.options[j].sizes[k].key == cart.size) {
+                    product.options[j].sizes[k].stock -= cart.quantity;
 
-                let productList = JSON.parse(localStorage.getItem("listProducts"));
-                for (let i in productList) {
-                    if (productList[i].id == product.id) {
-                        productList[i] = product;
-                        localStorage.setItem("listProducts", JSON.stringify(productList)); // save to local
-                        console.log("da tru")
-                        return;
+                    let productList = JSON.parse(localStorage.getItem("listProducts"));
+                    for (let i in productList) {
+                        if (productList[i].id == product.id) {
+                            productList[i] = product;
+                            localStorage.setItem("listProducts", JSON.stringify(productList)); // save to local
+                            console.log("da tru")
+                            return;
+                        }
                     }
                 }
             }
