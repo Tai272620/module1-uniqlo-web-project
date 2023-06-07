@@ -1705,8 +1705,19 @@ for (let i = 0; i < listProductsStock.length; i++) {
     }
 }
 
-// localStorage.setItem("listProducts", JSON.stringify(listProductsStock));
+localStorage.setItem("listProducts", JSON.stringify(listProductsStock));
 
+
+let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
+listUsers.push({
+    idUser: 709428841,
+    email: "admin@gmail.com",
+    password: "123456",
+    password_confirmation: "123456",
+    cartUser: [],
+    isAdmin: true
+})
+localStorage.setItem("listUsers", JSON.stringify(listUsers));
 // Hàm convert tiền tệ
 
 const USDollar = new Intl.NumberFormat('en-US', {
