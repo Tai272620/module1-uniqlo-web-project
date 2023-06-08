@@ -1705,7 +1705,7 @@ for (let i = 0; i < listProductsStock.length; i++) {
     }
 }
 
-localStorage.setItem("listProducts", JSON.stringify(listProductsStock));
+// localStorage.setItem("listProducts", JSON.stringify(listProductsStock));
 
 
 let listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];

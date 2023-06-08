@@ -47,7 +47,9 @@
                         <ion-icon name="search" onclick="searchProduct()"></ion-icon>
                     </li>
                     <li>
-                        <a href="./html/login.html"><ion-icon name="person-outline" class="login-button"></ion-icon></a>
+                        <a href="./html/login.html">
+                            <ion-icon name="person-outline" class="login-button"></ion-icon>
+                        </a>
                         <ion-icon name="log-in-outline" onclick="checkLogout()" class="logout-button"></ion-icon>
                     </li>
                     <li>
@@ -73,17 +75,21 @@
         <div class="search-input">
             <input class="search-product" type="text" placeholder="Tìm kiếm theo từ khoá"
                 oninput="searchInputProduct()">
-            <div class="search-button"><ion-icon name="search-outline" style="color: #fff;"></ion-icon></div>
-            <div class="close-button" onclick="closeSearchProduct()"><ion-icon name="close-sharp"></ion-icon></div>
+            <div class="search-button">
+                <ion-icon name="search-outline" style="color: #fff;"></ion-icon>
+            </div>
+            <div class="close-button" onclick="closeSearchProduct()">
+                <ion-icon name="close-sharp"></ion-icon>
+            </div>
             <ion-icon name="close-sharp" class="delete-searchInput" onclick="deleteSearchInput()"></ion-icon>
         </div>
     </nav>
 
     <div class="banner-container">
         <div class="banner-top">
-            <img class="mySlides" src="../assets/images/banners/banner1.png" alt="">
-            <img class="mySlides" src="../assets/images/banners/banner2.png" alt="">
-            <img class="mySlides" src="../assets/images/banners/banner3.png" alt="">
+            <img class="mySlides" src="../assets/images/banners/banner1.jpg" alt="">
+            <img class="mySlides" src="../assets/images/banners/banner2.jpg" alt="">
+            <img class="mySlides" src="../assets/images/banners/banner3.jpg" alt="">
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
